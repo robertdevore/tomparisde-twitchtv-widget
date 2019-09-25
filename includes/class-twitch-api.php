@@ -92,10 +92,10 @@ if ( ! class_exists( 'TP_Twitch_API' ) ) {
 		public function get_streams( $args = array() ) {
 
 			$defaults = array(
-				'first' => 10, // Amount of streams
-				'game_id' => '',
-				'language' => '',
-				'user_id' => '',
+				'first'      => 10, // Amount of streams
+				'game_id'    => '',
+				'language'   => '',
+				'user_id'    => '',
 				'user_login' => ''
 			);
 
@@ -125,7 +125,7 @@ if ( ! class_exists( 'TP_Twitch_API' ) ) {
 		public function get_users( $args = array() ) {
 
 			$defaults = array(
-				'id' => '',
+				'id'    => '',
 				'login' => '',
 			);
 
@@ -164,7 +164,7 @@ if ( ! class_exists( 'TP_Twitch_API' ) ) {
 
 						// Comma separated values must be converted to arrays
 						if ( is_string( $arg_value ) && strpos( $arg_value, ',') !== false )
-							$arg_value = explode(',', $arg_value);
+							$arg_value = explode( ',', $arg_value );
 
 						// Add query args
 						$query_args[$arg_key] = $arg_value;
@@ -174,7 +174,7 @@ if ( ! class_exists( 'TP_Twitch_API' ) ) {
 				if ( sizeof( $query_args ) > 0 ) {
 					// Extended "http_build_query" in order to add multiple args with the same key
 					$query = http_build_query( $query_args,null, '&' );;
-					$query_string = preg_replace('/%5B(?:[0-9]|[1-9][0-9]+)%5D=/', '=', $query);
+					$query_string = preg_replace( '/%5B(?:[0-9]|[1-9][0-9]+)%5D=/', '=', $query );
 					$url .= '?' . $query_string;
 				}
 			}

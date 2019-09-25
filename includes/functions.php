@@ -201,37 +201,37 @@ function tp_twitch_get_game_options() {
 function tp_twitch_get_languages() {
 
 	return array(
-		'da' => __('Danish', 'tp-twitch-game' ),
-		'de' => __( 'German', 'tp-twitch-game' ),
-		'en' => __( 'English', 'tp-twitch-game' ),
-		'en-gb' => __('English (UK)', 'tp-twitch-game' ),
-		'es' => __( 'Spanish', 'tp-twitch-game' ),
+		'da'    => __( 'Danish', 'tp-twitch-game' ),
+		'de'    => __( 'German', 'tp-twitch-game' ),
+		'en'    => __( 'English', 'tp-twitch-game' ),
+		'en-gb' => __( 'English (UK)', 'tp-twitch-game' ),
+		'es'    => __( 'Spanish', 'tp-twitch-game' ),
 		'es-mx' => __( 'Spanish (Latin American)', 'tp-twitch-game' ),
-		'fr' => __( 'French', 'tp-twitch-game' ),
-		'it' => __( 'Italian', 'tp-twitch-game' ),
-		'hu' => __( 'Hungarian', 'tp-twitch-game' ),
-		'nl' => __( 'Dutch', 'tp-twitch-game' ),
-		'no' => __( 'Norwegian', 'tp-twitch-game' ),
-		'pl' => __( 'Polish', 'tp-twitch-game' ),
-		'pt' => __( 'Portuguese', 'tp-twitch-game' ),
+		'fr'    => __( 'French', 'tp-twitch-game' ),
+		'it'    => __( 'Italian', 'tp-twitch-game' ),
+		'hu'    => __( 'Hungarian', 'tp-twitch-game' ),
+		'nl'    => __( 'Dutch', 'tp-twitch-game' ),
+		'no'    => __( 'Norwegian', 'tp-twitch-game' ),
+		'pl'    => __( 'Polish', 'tp-twitch-game' ),
+		'pt'    => __( 'Portuguese', 'tp-twitch-game' ),
 		'pt-br' => __( 'Portuguese (Brazil)', 'tp-twitch-game' ),
-		'sk' => __( 'Slovenian', 'tp-twitch-game' ),
-		'fi' => __( 'Finnish', 'tp-twitch-game' ),
-		'sv' => __( 'Swedish', 'tp-twitch-game' ),
-		'vi' => __( 'Vietnamese', 'tp-twitch-game' ),
-		'tr' => __( 'Turkish', 'tp-twitch-game' ),
-		'cs' => __( 'Czech', 'tp-twitch-game' ),
-		'el' => __( 'Greek', 'tp-twitch-game' ),
-		'bg' => __( 'Bulgarian', 'tp-twitch-game' ),
-		'ru' => __( 'Russian', 'tp-twitch-game' ),
-		'ar' => __( 'Arabic', 'tp-twitch-game' ),
-		'th' => __( 'Thai', 'tp-twitch-game' ),
+		'sk'    => __( 'Slovenian', 'tp-twitch-game' ),
+		'fi'    => __( 'Finnish', 'tp-twitch-game' ),
+		'sv'    => __( 'Swedish', 'tp-twitch-game' ),
+		'vi'    => __( 'Vietnamese', 'tp-twitch-game' ),
+		'tr'    => __( 'Turkish', 'tp-twitch-game' ),
+		'cs'    => __( 'Czech', 'tp-twitch-game' ),
+		'el'    => __( 'Greek', 'tp-twitch-game' ),
+		'bg'    => __( 'Bulgarian', 'tp-twitch-game' ),
+		'ru'    => __( 'Russian', 'tp-twitch-game' ),
+		'ar'    => __( 'Arabic', 'tp-twitch-game' ),
+		'th'    => __( 'Thai', 'tp-twitch-game' ),
 		'zh-cn' => __( 'Chinese', 'tp-twitch-game' ),
 		'zh-tw' => __( 'Chinese (Traditional)', 'tp-twitch-game' ),
-		'ja' => __( 'Japanese', 'tp-twitch-game' ),
-		'ko' => __( 'Korean', 'tp-twitch-game' ),
-		'hi' => __( 'Hindi', 'tp-twitch-game' ),
-		'ro' => __( 'Romanian', 'tp-twitch-game' ),
+		'ja'    => __( 'Japanese', 'tp-twitch-game' ),
+		'ko'    => __( 'Korean', 'tp-twitch-game' ),
+		'hi'    => __( 'Hindi', 'tp-twitch-game' ),
+		'ro'    => __( 'Romanian', 'tp-twitch-game' ),
 	);
 }
 
@@ -248,7 +248,7 @@ function tp_twitch_get_language_options() {
 
 	if ( is_array( $languages ) && sizeof ( $languages ) > 0 ) {
 
-		asort($languages );
+		asort( $languages );
 
 		$options = array(
 			'' => __( 'Please select...', 'tomparisde-twitchtv-widget' )
@@ -287,8 +287,8 @@ function tp_twitch_get_widget_size_options( $is_settings_page = true ) {
 
     $options = ( ! $is_settings_page ) ? array( '' => __( 'Standard (Settings Page)' ) ) : array();
 
-    $options['large'] = __( 'Large', 'tomparisde-twitchtv-widget' );
-    $options['small'] = __( 'Small', 'tomparisde-twitchtv-widget' );
+    $options['large']       = __( 'Large', 'tomparisde-twitchtv-widget' );
+    $options['small']       = __( 'Small', 'tomparisde-twitchtv-widget' );
     $options['large-first'] = __( 'First Large, Others Small', 'tomparisde-twitchtv-widget' );
 
     return $options;
@@ -304,8 +304,8 @@ function tp_twitch_get_widget_preview_options( $is_settings_page = true ) {
 
     $options = ( ! $is_settings_page ) ? array( '' => __( 'Standard (Settings Page)' ) ) : array();
 
-    $options['image'] = __( 'Image', 'tomparisde-twitchtv-widget' );
-    $options['video'] = __( 'Video', 'tomparisde-twitchtv-widget' );
+    $options['image']       = __( 'Image', 'tomparisde-twitchtv-widget' );
+    $options['video']       = __( 'Video', 'tomparisde-twitchtv-widget' );
     $options['video-first'] = __( 'First Video, Others Images', 'tomparisde-twitchtv-widget' );
 
     return $options;
@@ -531,15 +531,15 @@ function tp_twitch_setup_streams_data( $streams, $streams_args ) {
 			*/
 
 			$user_data = array(
-				'id' => ( isset( $user['id'] ) ) ? $user['id'] : 0,
-				'login' => ( isset( $user['login'] ) ) ? $user['login'] : '',
-				'display_name' => ( isset( $user['display_name'] ) ) ? $user['display_name'] : '',
-				'type' => ( isset( $user['type'] ) ) ? $user['type'] : '',
-				'broadcaster_type' => ( isset( $user['broadcaster_type'] ) ) ? $user['broadcaster_type'] : '',
-				'description' => ( isset( $user['description'] ) ) ? $user['description'] : '',
+				'id'                => ( isset( $user['id'] ) ) ? $user['id'] : 0,
+				'login'             => ( isset( $user['login'] ) ) ? $user['login'] : '',
+				'display_name'      => ( isset( $user['display_name'] ) ) ? $user['display_name'] : '',
+				'type'              => ( isset( $user['type'] ) ) ? $user['type'] : '',
+				'broadcaster_type'  => ( isset( $user['broadcaster_type'] ) ) ? $user['broadcaster_type'] : '',
+				'description'       => ( isset( $user['description'] ) ) ? $user['description'] : '',
 				'profile_image_url' => ( isset( $user['profile_image_url'] ) ) ? $user['profile_image_url'] : '',
 				'offline_image_url' => ( isset( $user['offline_image_url'] ) ) ? $user['offline_image_url'] : '',
-				'view_count' => ( isset( $user['view_count'] ) ) ? $user['view_count'] : 0,
+				'view_count'        => ( isset( $user['view_count'] ) ) ? $user['view_count'] : 0,
 			);
 
 			$users_data[$user_data['id']] = $user_data;
@@ -572,19 +572,19 @@ function tp_twitch_setup_streams_data( $streams, $streams_args ) {
         if ( ! isset($user_data['id'] ) )
             continue;
 
-        $stream = (isset($user_streams[$user_data['id']])) ? $user_streams[$user_data['id']] : array();
+        $stream = ( isset( $user_streams[$user_data['id']] ) ) ? $user_streams[$user_data['id']] : array();
 
         $stream_data = array(
-            'id' => (isset($stream['id'])) ? $stream['id'] : 0,
-            'game_id' => (isset($stream['game_id'])) ? $stream['game_id'] : 0,
-            'community_ids' => (isset($stream['community_ids'])) ? $stream['community_ids'] : '',
-            'type' => (isset($stream['type'])) ? $stream['type'] : 'offline',
-            'title' => (isset($stream['title'])) ? $stream['title'] : '',
-            'viewer_count' => (isset($stream['viewer_count'])) ? $stream['viewer_count'] : 0,
-            'started_at' => (isset($stream['started_at'])) ? $stream['started_at'] : '',
-            'language' => (isset($stream['language'])) ? $stream['language'] : '',
-            'thumbnail_url' => (isset($stream['thumbnail_url'])) ? $stream['thumbnail_url'] : '',
-            'user' => $user_data,
+            'id'            => ( isset( $stream['id'] ) ) ? $stream['id'] : 0,
+            'game_id'       => ( isset( $stream['game_id'] ) ) ? $stream['game_id'] : 0,
+            'community_ids' => ( isset( $stream['community_ids'] ) ) ? $stream['community_ids'] : '',
+            'type'          => ( isset( $stream['type'] ) ) ? $stream['type'] : 'offline',
+            'title'         => ( isset( $stream['title'] ) ) ? $stream['title'] : '',
+            'viewer_count'  => ( isset( $stream['viewer_count'] ) ) ? $stream['viewer_count'] : 0,
+            'started_at'    => ( isset( $stream['started_at'] ) ) ? $stream['started_at'] : '',
+            'language'      => ( isset( $stream['language'] ) ) ? $stream['language'] : '',
+            'thumbnail_url' => ( isset( $stream['thumbnail_url'] ) ) ? $stream['thumbnail_url'] : '',
+            'user'          => $user_data,
         );
 
         $streams_data[] = $stream_data;
